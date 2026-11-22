@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sheikh Dr. Ahmad Elladan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --stone:#eef0ec;
+  --paper:#f8f9f6;
+  --ink:#16302f;
+  --teal:#1f5b55;
+  --brass:#8f6f26;
+  --line:#cdd5d0;
+  --night:#0f2423;
+  --night-ink:#e9efe9;
+  --night-brass:#d2b25c;
+  --display:"Aref Ruqaa","Amiri",serif;
+  --head:"Reem Kufi","Amiri",sans-serif;
+  --body:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--body);font-size:1.22rem;line-height:2.05}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+.nav{position:sticky;top:0;z-index:5;background:var(--ink);border-bottom:2px solid var(--brass)}
+.nav ul{list-style:none;margin:0;padding:0 20px;display:flex;gap:4px;overflow-x:auto;max-width:1040px;margin-inline:auto;scrollbar-width:thin}
+.nav a{display:block;white-space:nowrap;padding:12px 14px;color:#dfe7e2;text-decoration:none;font-family:var(--head);font-size:1rem;line-height:1.6}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav a.khat{color:var(--night-brass)}
+.hero{padding:56px 0 48px;background:linear-gradient(180deg,var(--paper),var(--stone));border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:center}
+.portrait{width:230px;aspect-ratio:4/5;border:2px solid var(--brass);border-radius:120px 120px 8px 8px;background:var(--ink);overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:55% 0;display:block}
+.eyebrow{font-family:var(--head);color:var(--brass);font-size:1.05rem;letter-spacing:0}
+h1{font-family:var(--display);font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.5;font-weight:700;color:var(--ink)}
+.titles{font-size:1.35rem;margin:6px 0 14px}
+.rahima{font-family:var(--display);color:var(--teal);font-size:1.6rem}
+.dates{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:14px;font-size:1.08rem}
+.dates span{border-inline-start:3px solid var(--brass);padding-inline-start:12px}
+section{padding:60px 0}
+.sec-title{font-family:var(--head);font-size:clamp(1.8rem,4vw,2.4rem);color:var(--ink);line-height:1.6;margin-bottom:6px}
+.sec-title::after{content:"";display:block;width:64px;height:3px;background:var(--brass);margin-top:8px}
+.lead{max-width:62ch;margin:18px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--paper);border:1px solid var(--line);padding:22px 24px}
+.card h3{font-family:var(--head);font-size:1.25rem;color:var(--teal);margin-bottom:4px;line-height:1.7}
+.card p{margin:0}
+.card ul{margin:6px 0 0;padding-inline-start:1.2rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;border:1px solid var(--line);background:var(--paper)}
+.fact{padding:18px 20px;border-inline-start:1px solid var(--line)}
+.fact:first-child{border-inline-start:0}
+.fact b{display:block;font-family:var(--head);font-size:2rem;color:var(--brass);line-height:1.4;font-variant-numeric:tabular-nums}
+.fact span{font-size:1.02rem;line-height:1.7;display:block}
+.tl{list-style:none;margin:30px 0 0;padding:0;border-inline-start:2px solid var(--line)}
+.tl li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:10px 22px 10px 0;position:relative}
+.tl li::before{content:"";position:absolute;inset-inline-start:-7px;top:22px;width:12px;height:12px;background:var(--brass);border-radius:50%}
+.tl li{padding-inline-start:26px;padding-inline-end:0}
+.tl .y{font-family:var(--head);color:var(--brass);font-size:1.25rem;font-variant-numeric:tabular-nums;line-height:2}
+.tl .t{margin:0}
+.tl .t small{display:block;color:var(--teal);font-size:1rem}
+#khat{background:var(--night);color:var(--night-ink);padding:72px 0 80px}
+#khat .sec-title{color:var(--night-brass)}
+#khat .sec-title::after{background:var(--night-brass)}
+#khat a{color:var(--night-brass)}
+.basmala{font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem);text-align:center;color:var(--night-brass);margin:0 0 34px;line-height:1.8}
+.khat-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:28px}
+.dark{background:rgba(255,255,255,.045);border:1px solid rgba(210,178,92,.28);padding:22px 24px}
+.dark h3{font-family:var(--head);color:var(--night-brass);font-size:1.25rem;margin-bottom:6px;line-height:1.7}
+.dark p{margin:0}
+.dark ul{margin:6px 0 0;padding-inline-start:1.2rem}
+.dark li{margin-bottom:6px}
+.gallery{columns:3;column-gap:16px;margin-top:20px}
+.gallery figure{margin:0 0 16px!important;break-inside:avoid}
+.gallery a{display:block}
+.gallery img{border:1px solid rgba(210,178,92,.28);background:#fff}
+.gallery img{width:100%;height:auto;display:block}
+.gallery figcaption{font-size:.95rem;margin-top:6px;color:#c7d3cd;line-height:1.7}
+.h-sub{font-family:var(--head);font-size:1.4rem;margin:44px 0 0;color:var(--night-ink);line-height:1.7}
+.media-row{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:26px}
+.vid{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--teal);padding:16px 18px 18px}
+.vid h3{font-family:var(--head);font-size:1.15rem;color:var(--teal);margin:0 0 4px;line-height:1.7}
+.vid p{margin:0 0 10px;font-size:1.05rem;line-height:1.8}
+.vid .alt{display:block;margin-top:12px;padding:12px 16px;background:var(--ink);color:var(--night-brass);text-decoration:none;font-family:var(--head);font-size:1.05rem;text-align:center;line-height:1.7}
+.vid .alt::before{content:"\25B6  "}
+.vid .alt:hover{background:var(--teal);color:#fff}
+.links{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+.links li{border-bottom:1px solid var(--line);padding:10px 0;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;font-size:1.1rem;line-height:1.8}
+.links small{color:#4c625f;font-size:.95rem;white-space:nowrap}
+.sub{font-family:var(--head);font-size:1.35rem;color:var(--ink);margin:40px 0 0;line-height:1.7}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+.q{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--teal);padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.q p{margin:0}
+.q cite{font-style:normal;font-family:var(--head);font-size:1rem;color:var(--brass);line-height:1.7}
+.q small{display:block;color:#4c625f;font-size:.95rem;line-height:1.7}
+.passing{background:var(--ink);color:#e8eeea}
+.passing .sec-title{color:#fff}
+.passing .sec-title::after{background:var(--night-brass)}
+.passing a{color:var(--night-brass)}
+.sources ol{padding-inline-start:1.3rem;margin:18px 0 0}
+.sources li{margin-bottom:4px;font-size:1.05rem;line-height:1.9}
+footer{background:var(--night);color:#cfdad4;padding:30px 0 40px;text-align:center;font-size:1.05rem}
+footer .rahima{color:var(--night-brass);display:block;margin-bottom:6px}
+@media (max-width:820px){
+  .media-row{grid-template-columns:1fr}
+  .links li{grid-template-columns:1fr;gap:0}
+  .hero .wrap{grid-template-columns:1fr;justify-items:start;gap:26px}
+  .portrait{width:170px;font-size:6.5rem}
+  .two,.khat-grid,.quotes{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(3){border-inline-start:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+  .gallery{columns:2}
+  .tl li{grid-template-columns:1fr;gap:0}
+  section{padding:44px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Lora:wght@400;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>:root{--display:"Cormorant Garamond","Aref Ruqaa",serif;--head:"Montserrat","Reem Kufi",sans-serif;--body:"Lora","Amiri",serif}body{font-size:1.05rem;line-height:1.75}h1{line-height:1.15}.sec-title{line-height:1.3;font-size:clamp(1.6rem,3.6vw,2.1rem)}.nav a{font-size:.85rem}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.85rem}.basmala{font-family:"Aref Ruqaa","Amiri",serif}.rahima{font-size:1.5rem}.fact b{font-size:1.8rem}.tl .y{font-size:1.1rem;line-height:1.7}.card h3,.dark h3{font-size:1.05rem;line-height:1.5}.sub{font-size:1.15rem;line-height:1.5}.h-sub{font-size:1.2rem}.links li{font-size:.98rem;line-height:1.6}.vid h3{font-size:1rem}.q cite{font-size:.85rem;line-height:1.5}</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Site sections">
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#nabtha">About</a></li>
+    <li><a href="#masira">Timeline</a></li>
+    <li><a href="#ilm">Scholarship &amp; Teaching</a></li>
+    <li><a href="#qada">Judiciary &amp; Ifta</a></li>
+    <li><a href="#dawa">Writing &amp; Media</a></li>
+    <li><a class="khat" href="#khat">Arabic Calligraphy</a></li>
+    <li><a href="#media">Videos</a></li>
+    <li><a href="#shahadat">Tributes</a></li>
+    <li><a href="#wafat">Passing</a></li>
+    <li><a href="#masader">Official Page</a></li>
+    <li><a href="index.html" lang="ar" dir="rtl">العربية</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="portrait"><img src="1795319378995_556946224_31979824311615981_1009479647728558505_n.jpg" alt="Sheikh Dr. Ahmad Elladan writing Arabic calligraphy"></div>
+    <div>
+      <div class="eyebrow">In Memoriam</div>
+      <h1>Sheikh Dr. Ahmad Elladan</h1>
+      <p class="titles">Mufti of Rashaya &middot; Scholar and Jurist &middot; Sharia Judge &middot; Preacher &middot; Calligrapher</p>
+      <div class="rahima">May God have mercy on him</div>
+      <div class="dates">
+        <span>Born: 25 February 1953 &middot; 11 Jumada al-Akhirah 1372 AH</span>
+        <span>Died: 1 January 2018 &middot; 14 Rabi&#39; al-Thani 1439 AH</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="nabtha">
+  <div class="wrap">
+    <h2 class="sec-title">About the Sheikh</h2>
+    <p class="lead">Sheikh Dr. Ahmad ibn Saeed Elladan al-Rashani was a Lebanese scholar, jurist, preacher, Sharia judge and calligrapher. He was born in Khirbet Rouha, in the Rashaya district of the western Bekaa, and served as Mufti of the Rashaya district from 2011 until his death.</p>
+    <p class="lead">His life joined the sciences of Sharia and Quranic exegesis, the Sharia judiciary, university teaching, and work in print, radio and television, with the art of Arabic calligraphy that had accompanied him since his school days. He wrote parts of the Holy Quran by hand and won prizes in international calligraphy competitions.</p>
+
+    <div class="facts">
+      <div class="fact"><b>1953</b><span>Born in Khirbet Rouha, Rashaya</span></div>
+      <div class="fact"><b>1995</b><span>Doctorate from Egypt with distinction and first-class honours</span></div>
+      <div class="fact"><b>2011</b><span>Appointed Mufti of the Rashaya district</span></div>
+      <div class="fact"><b>2008</b><span>Appointed Sharia judge and president of the Sharia court in Arsal</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="masira" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">A Life Through the Years</h2>
+    <ol class="tl">
+      <li><span class="y">1953</span><p class="t">Born in Khirbet Rouha, Rashaya district, Lebanon.</p></li>
+      <li><span class="y">1964</span><p class="t">Finished primary school at the Maqasid Islamic Charitable School in his village, and studied the Quran and tajwid under Sheikh Hamdi Abu Jaq.</p></li>
+      <li><span class="y">1972</span><p class="t">Finished secondary school at Azhar Lebanon in Beirut, then travelled to Egypt and joined the School for the Improvement of Calligraphy (Tahsin al-Khutut).</p></li>
+      <li><span class="y">1976</span><p class="t">Earned his bachelor&#39;s degree (licence), returned to Lebanon, and worked at the magazine <em>al-Fikr al-Islami</em> and at Azhar Beirut.</p></li>
+      <li><span class="y">1978</span><p class="t">Married and settled in Beirut (Zardan), working as a book proofreader for major publishing houses.</p></li>
+      <li><span class="y">1981 – 1983</span><p class="t">Worked night shifts at the magazine <em>al-Liwa&#39;</em>, then devoted himself to writing out the Holy Quran.</p></li>
+      <li><span class="y">1984 – 1986</span><p class="t">Took study leave in Egypt and returned with a master&#39;s degree.</p></li>
+      <li><span class="y">1990</span><p class="t">Served as principal of Azhar Bekaa, then as imam in the town of Taalabaya and teacher at the National Brotherhood School.</p></li>
+      <li><span class="y">1995</span><p class="t">Completed his doctoral thesis in Egypt with distinction and first-class honours.</p></li>
+      <li><span class="y">1998</span><p class="t">Took part in a conference in Jordan, and won a prize for Naskh script at the Fourth International Arabic Calligraphy Competition.</p></li>
+      <li><span class="y">2000</span><p class="t">Took part in a seminar on women on the Al-Safwa channel and in the Sharjah conference, and visited Canada, where he met Muslim communities.</p></li>
+      <li><span class="y">2005</span><p class="t">Took part in the Second Exhibition of Arabic Calligraphy and Lettering in Tripoli (Lebanese University).</p></li>
+      <li><span class="y">2008</span><p class="t">Appointed Sharia judge and president of the Sharia court in Arsal, until 2012.</p></li>
+      <li><span class="y">2011</span><p class="t">Appointed Mufti of the Rashaya district by the Mufti of the Republic, Sheikh Muhammad Rashid Qabbani (May 2011).</p></li>
+      <li><span class="y">2012 – 2018</span><p class="t">President of the Rashaya Sharia Court.</p></li>
+      <li><span class="y">2013</span><p class="t">Attended the International Conference of Latin American Muslims in Brazil, and began his programmes on Future TV (until 2017).</p></li>
+      <li><span class="y">2016</span><p class="t">Took part in the &ldquo;Islam and Moderation&rdquo; conference at Dar al-Fatwa.</p></li>
+      <li><span class="y">2018</span><p class="t">Passed away on 1 January.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="ilm">
+  <div class="wrap">
+    <h2 class="sec-title">Scholarship &amp; Teaching</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>Education</h3>
+        <ul>
+          <li>Primary: the Maqasid Islamic Charitable School in his village.</li>
+          <li>Secondary: Azhar Lebanon in Beirut (1972).</li>
+          <li>Al-Azhar University in Egypt: bachelor&#39;s (1976), master&#39;s (1986) and doctorate (1995) at the Faculty of Usul al-Din.</li>
+          <li>In Egypt he met a number of sheikhs and Quran reciters, among them Sheikh Mustafa Ismail and Sheikh Khalil al-Husari.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>University Teaching</h3>
+        <p>He taught at the Faculty of Sharia, the Maqasid Institute, the Faculty of Da&#39;wa, the Imam al-Awza&#39;i College, the Faculty of Sharia in the Bekaa, Azhar Bekaa, Beirut Islamic University and Maqasid University.</p>
+      </div>
+      <div class="card">
+        <h3>Thesis Supervision</h3>
+        <p>He supervised many university theses at the Islamic University of Tripoli and Al-Jinan University in Tripoli, and examined theses at both and at the other Islamic universities where he taught.</p>
+      </div>
+      <div class="card">
+        <h3>Research &amp; Conferences</h3>
+        <p>At the Sharjah conference in 2000 he presented a paper on thematic exegesis. He also took part in a conference in Jordan (1998), the &ldquo;Islam and Moderation&rdquo; conference at Dar al-Fatwa (2016), and the International Conference of Latin American Muslims in Brazil (2013).</p>
+      </div>
+      <div class="card" style="grid-column:1/-1">
+        <h3>Participation in Algeria: the Belkaidia Hebria Zawiya</h3>
+        <p>The Sheikh took part in the &ldquo;Muhammadan Lessons&rdquo; series organised by the Belkaidia Hebria Zawiya in the town of Sidi Maarouf, east of Oran, Algeria. The series is held every year with scholars from Algeria and the wider Muslim world, including scholars from Lebanon. He gave lectures there year after year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qada" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">Judiciary &amp; Ifta</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>Sharia Judge</h3>
+        <p>Appointed a judge in 2008, he presided over the Sharia court in Arsal from 2008 to 2012, then over the Rashaya Sharia Court from 2012 to 2018.</p>
+      </div>
+      <div class="card">
+        <h3>Mufti of Rashaya</h3>
+        <p>In 2011 the Mufti of the Lebanese Republic, Sheikh Muhammad Rashid Qabbani, issued a decree appointing him Mufti of the Rashaya district, and he carried out that duty until his death. In his hometown he founded the &ldquo;Al-Burhan&rdquo; association, which began building a seat for Dar al-Fatwa in the district.</p>
+      </div>
+      <div class="card">
+        <h3>Imam &amp; Preacher</h3>
+        <p>Imam of the town of Taalabaya. At Dar al-Fatwa he wrote articles under the supervision of Mufti Sheikh Hassan Khaled, and ran the platform for thought and fatwas.</p>
+      </div>
+      <div class="card">
+        <h3>His Approach</h3>
+        <p>He was known for calling to moderation and balance, and for stressing that sound Sufism must be taken from respected sheikhs and scholars.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dawa">
+  <div class="wrap">
+    <h2 class="sec-title">Writing &amp; Media</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>Editing &amp; Proofreading</h3>
+        <p>He worked at the magazine <em>al-Fikr al-Islami</em> until it ceased publication in 1989, and at <em>al-Liwa&#39;</em> (1981–1983). He proofread books for Dar al-Kutub al-Ilmiyya, Dar al-Ma&#39;rifa, Dar Ihya&#39; al-Turath al-Arabi and Dar al-Nafa&#39;is, among them al-Zamakhshari&#39;s <em>al-Kashshaf</em>.</p>
+      </div>
+      <div class="card">
+        <h3>Radio</h3>
+        <p>On Holy Quran Radio he presented the weekly programme &ldquo;Rulings of the Faith&rdquo; and the programme &ldquo;Journeys of Light&rdquo; (<em>Siyar min al-Nur</em>), which offered poetic portraits from the lives of the Companions over three years.</p>
+      </div>
+      <div class="card">
+        <h3>Television</h3>
+        <p>On Future TV between 2013 and 2017 he presented religious programmes, among them &ldquo;The Four Imams&rdquo; and &ldquo;The Best of Speech&rdquo;. In 2000 he also took part in a seminar on women on the Al-Safwa channel.</p>
+      </div>
+      <div class="card">
+        <h3>Meeting Communities</h3>
+        <p>He travelled to Canada in 2000 and met Muslim communities in several cities and provinces, and to Brazil in 2013 for the International Conference of Latin American Muslims.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Calligraphy chapter ===== -->
+<section id="khat">
+  <div class="wrap">
+    <p class="basmala" aria-hidden="true" lang="ar" dir="rtl">بسم الله الرحمن الرحيم</p>
+    <h2 class="sec-title">The Art of Arabic Calligraphy</h2>
+    <p class="lead">Calligraphy was Sheikh Ahmad Elladan&#39;s companion from his youth. His teachers admired it early, and he refined his gift in Beirut and then in Cairo, continuing to write calligraphy alongside his work in scholarship and the judiciary. In his funeral tribute, the Mufti of the Republic described him as a master of art, calligraphy and Arabic ornamentation.</p>
+
+    <div class="khat-grid">
+      <div class="dark">
+        <h3>From Student to Calligrapher</h3>
+        <ul>
+          <li>At Azhar Lebanon in Beirut he met Haj Afif al-Tabbara, who admired his handwriting and directed him to Ustadh Kamil al-Baba, one of Lebanon&#39;s foremost calligraphers.</li>
+          <li>Ustadh Kamil al-Baba advised him to deepen his skill in Egypt.</li>
+          <li>In Cairo he joined the School for the Improvement of Calligraphy and studied under Ustadh Sayyid Ibrahim and Ustadh Muhammad Abd al-Qadir.</li>
+          <li>Leading calligraphers admired his hand and encouraged him to keep developing his skill.</li>
+        </ul>
+      </div>
+      <div class="dark">
+        <h3>Writing the Holy Quran</h3>
+        <p>From 1983 he devoted himself to writing out the Holy Quran by hand, on large-format paper, and completed several parts.</p>
+      </div>
+      <div class="dark">
+        <h3>Competitions &amp; Exhibitions</h3>
+        <ul>
+          <li><b>1998:</b> Won a prize for Naskh script at the Fourth International Arabic Calligraphy Competition.</li>
+          <li><b>11 – 12 June 2005:</b> Took part in the Second Exhibition of Arabic Calligraphy and Lettering in Tripoli, Lebanese University.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="h-sub">Gallery of His Works</h3>
+    <p style="margin:4px 0 0;max-width:62ch">Paintings and works by the Sheikh&#39;s own hand.</p>
+    <div class="gallery">
+<figure><a href="1795318594437_art-01.jpg" target="_blank" rel="noopener"><img src="1795318594437_art-01.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594438_art-02.jpg" target="_blank" rel="noopener"><img src="1795318594438_art-02.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594439_art-03.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-03.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594439_art-04.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-04.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594439_art-05.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-05.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594440_art-06.jpg" target="_blank" rel="noopener"><img src="1795318594440_art-06.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594440_art-07.jpg" target="_blank" rel="noopener"><img src="1795318594440_art-07.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594441_art-08.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-08.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594441_art-09.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-09.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594441_art-10.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-10.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594442_art-11.jpg" target="_blank" rel="noopener"><img src="1795318594442_art-11.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594442_art-12.jpg" target="_blank" rel="noopener"><img src="1795318594442_art-12.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594443_art-13.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-13.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594443_art-14.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-14.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594444_art-16.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-16.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594444_art-17.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-17.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594444_art-18.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-18.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594437_art-19.jpg" target="_blank" rel="noopener"><img src="1795318594437_art-19.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618021_art-20.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-20.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618021_art-21.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-21.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-22.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-22.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-23.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-23.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-24.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-24.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-25.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-25.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-26.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-26.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-27.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-27.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-28.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-28.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-29.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-29.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-30.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-30.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-31.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-31.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-32.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-32.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-33.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-33.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618022_art-34.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-34.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618021_art-35.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-35.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318618021_art-36.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-36.jpg" alt="Arabic calligraphy by Sheikh Ahmad Elladan" loading="lazy"></a></figure>
+<figure><a href="1795318594443_art-15.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-15.jpg" alt="Title page of a doctoral thesis supervised by Sheikh Ahmad Elladan, University of Tripoli" loading="lazy"></a><figcaption>Title page of a doctoral thesis he supervised, University of Tripoli</figcaption></figure>
+    </div>
+    <p style="margin-top:22px"><a href="https://www.facebook.com/aalladan/" rel="noopener">See more of his work on his Facebook page</a></p>
+  </div>
+</section>
+
+<section id="media" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">Videos &amp; Links</h2>
+    <p class="lead">Clips from the Sheikh&#39;s official page, and his lessons and programmes available on YouTube. All of the videos are in Arabic.</p>
+
+    <h3 class="sub" style="margin-top:28px">&ldquo;The Four Imams&rdquo;: the Sheikh&#39;s episodes</h3>
+    <p class="lead" style="margin-top:10px">Episodes of the programme &ldquo;The Four Imams&rdquo; by broadcaster Abdul Halim Qabbani, with Sheikh Ahmad Elladan as guest, on Imam Ahmad ibn Hanbal, Imam al-Awza&#39;i and the ranks of the mujtahids.</p>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=fH8wcO0MkQU" target="_blank" rel="noopener">Episode 21: Imam Ahmad ibn Hanbal, Part 1</a><small>21 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=QlRHpW1SvJY" target="_blank" rel="noopener">Episode 22: Imam Ahmad ibn Hanbal, Part 2</a><small>18 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=p5noSiD72Z8" target="_blank" rel="noopener">Episode 23: Imam Ahmad ibn Hanbal, Part 3</a><small>19 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=-qvecyvR3Gk" target="_blank" rel="noopener">Episode 24: Imam Ahmad ibn Hanbal, Part 4</a><small>19 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=2XKG-y6P2jc" target="_blank" rel="noopener">Episode 25: Imam Ahmad ibn Hanbal, Part 5</a><small>17 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=rX4Hogb9fnA" target="_blank" rel="noopener">Episode 26: Imam Ahmad ibn Hanbal, Part 6</a><small>18 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=_RBSFTFl_RU" target="_blank" rel="noopener">Episode 27: Imam Ahmad ibn Hanbal, Part 7</a><small>20 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=AqvYAfr1DQo" target="_blank" rel="noopener">Episode 28: Imam Abd al-Rahman ibn Amr al-Awza&#39;i, Part 1</a><small>18 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=Mnu7JinEJ60" target="_blank" rel="noopener">Episode 29: Imam Abd al-Rahman ibn Amr al-Awza&#39;i, Part 2</a><small>20 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=hvw--CBe1iY" target="_blank" rel="noopener">Episode 30, the final episode: the standing of ijtihad and the ranks of the mujtahids</a><small>21 min</small></li>
+    </ul>
+
+    <div class="media-row">
+      <div class="vid">
+        <h3>Rare photos and stories from the Sheikh&#39;s life</h3>
+        <p>A clip from the Sheikh&#39;s official Facebook page.</p>
+        <a class="alt" href="https://www.facebook.com/reel/2008461799178961" target="_blank" rel="noopener">Open the clip on Facebook</a>
+      </div>
+      <div class="vid">
+        <h3>Verses dedicated to the Sheikh&#39;s soul</h3>
+        <p>Words by Dr. Raafat al-Miqati, performed by Ustadh Walid Abu Hayt.</p>
+        <a class="alt" href="https://www.youtube.com/watch?v=3rqOht7QFGY" target="_blank" rel="noopener">Open on YouTube</a>
+      </div>
+      <div class="vid">
+        <h3>The Mufti&#39;s intellectual journey and gifts</h3>
+        <p>Future TV report on his life.</p>
+        <a class="alt" href="https://www.youtube.com/watch?v=JFKLcUNtHCo" target="_blank" rel="noopener">Open on YouTube</a>
+      </div>
+    </div>
+
+    <h3 class="sub">Television, radio and news coverage</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=UEtUvE_1zPo&t=8s" target="_blank" rel="noopener">&ldquo;Some of my fondest memories with my late teacher, Sheikh Dr. Ahmad Elladan, may God have mercy on him&rdquo;</a><small>23 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=zHnnbDmxKEc" target="_blank" rel="noopener">Occasions of Revelation: the story of the Cow of the Children of Israel, Part 1. Guest: Sheikh Ahmad Elladan; host: Abdul Halim Qabbani</a><small>21 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=li8gMwU7ruA" target="_blank" rel="noopener">Occasions of Revelation: the story of the Cow of the Children of Israel, Part 2</a><small>23 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=JFKLcUNtHCo" target="_blank" rel="noopener">The intellectual journey and gifts of Mufti Sheikh Ahmad Elladan, Future TV</a><small>3 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=z9sC_HfvEb0" target="_blank" rel="noopener">How Lebanon bade farewell to the Mufti of Rashaya, Future TV</a><small>2 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=FzrcpmhCpCE" target="_blank" rel="noopener">Photos and stories from the life of the late Mufti of Rashaya</a><small>9 min</small></li>
+    </ul>
+    <h3 class="sub">Participation in Algeria: the Belkaidia Hebria Zawiya</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=s3oAPwKK3iU" target="_blank" rel="noopener">2008 (Ramadan 1429, 3rd Forum, theme &ldquo;Inspired by the Noble Sunnah&rdquo;): servitude to God in the Prophetic Sunnah</a><small>1 hr 20 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=UOcjtPMD1yI" target="_blank" rel="noopener">2009 (Ramadan 1430, 4th Forum, theme &ldquo;The Rightly Guided Caliphs&rdquo;): our master Uthman ibn Affan, the school of modesty</a><small>1 hr</small></li>
+      <li><a href="https://www.youtube.com/watch?v=iGdxs0SNmNY" target="_blank" rel="noopener">2009: the place of reason in Islam</a><small>44 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=u8aFE8_cmLk" target="_blank" rel="noopener">2009: the creed of Ahl al-Sunna wa al-Jama&#39;a</a><small>32 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=AX6N-QU-Xlo" target="_blank" rel="noopener">2010 (Ramadan 1431, 5th Forum, theme &ldquo;Knowledge&rdquo;): Muhammadan Lessons 2010, Part 4</a><small>14 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=0WQjGTW_gbQ" target="_blank" rel="noopener">2011 (Ramadan 1432, 6th Forum): the merit of the Ash&#39;ari masters in preserving and defending the Islamic creed</a><small>31 min</small></li>
+      <li><a href="https://www.youtube.com/@zaouiabelkaidia" target="_blank" rel="noopener">7th Forum: the rights and duties of women in Islam through the lives of the Mothers of the Believers (seminar)</a><small>Channel</small></li>
+      <li><a href="https://www.youtube.com/@zaouiabelkaidia" target="_blank" rel="noopener">2016 (Ramadan 1437, 11th Forum, theme &ldquo;The Reform of the Ummah lies in Following the Messenger of Mercy&rdquo;): following the master of mankind in enjoining good and forbidding wrong, and modernity and its effect on Islam</a><small>Channel</small></li>
+    </ul>
+
+    <h3 class="sub">Lessons, lectures and sermons</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=0WQjGTW_gbQ" target="_blank" rel="noopener">The merit of the Ash&#39;ari masters in preserving and defending the Islamic creed</a><small>31 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=iGdxs0SNmNY" target="_blank" rel="noopener">The place of reason in Islam (2009)</a><small>44 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=u8aFE8_cmLk" target="_blank" rel="noopener">The creed of Ahl al-Sunna wa al-Jama&#39;a (2009)</a><small>32 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=s3oAPwKK3iU" target="_blank" rel="noopener">Servitude to God in the Prophetic Sunnah (Muhammadan Lessons 2008)</a><small>1 hr 20 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=UOcjtPMD1yI" target="_blank" rel="noopener">Our master Uthman ibn Affan, may God be pleased with him: the school of modesty</a><small>1 hr</small></li>
+      <li><a href="https://www.youtube.com/watch?v=7iPLzT4bV9o" target="_blank" rel="noopener">Friday sermon: &ldquo;Stop them, for they will be questioned&rdquo; (20 December 2014)</a><small>25 min</small></li>
+      <li><a href="https://www.youtube.com/watch?v=3INs-SyMPxA" target="_blank" rel="noopener">Exegesis of the verse &ldquo;I will take you and raise you to Myself&rdquo;</a><small>Clip</small></li>
+      <li><a href="https://www.youtube.com/watch?v=HigAMh5GtTo" target="_blank" rel="noopener">The creed of the Muslims</a><small>Short clip</small></li>
+      <li><a href="https://www.youtube.com/watch?v=pnPRFaY4MbA" target="_blank" rel="noopener">Address at the conference of the Association of Muslim Scholars in support of the Syrian revolution</a><small>17 min</small></li>
+    </ul>
+  </div>
+</section>
+
+<section id="shahadat">
+  <div class="wrap">
+    <h2 class="sec-title">Tributes</h2>
+    <div class="quotes">
+      <div class="q">
+        <p>The Mufti of the Republic, Sheikh Abdul Latif Derian, described him as &ldquo;the model of the jurist-scholar&rdquo;, a man of refined letters, art, calligraphy and Arabic ornamentation.</p>
+        <cite>Mufti of Lebanon, Sheikh Abdul Latif Derian</cite>
+        <small>From his obituary, 2018</small>
+      </div>
+      <div class="q">
+        <p>Prime Minister Saad Hariri saw in him &ldquo;a beacon of wisdom and moderation&rdquo; and a caller to unity, love and shouldering responsibility. He offered condolences to Dar al-Fatwa, of which the Sheikh was a pillar.</p>
+        <cite>Prime Minister Saad Hariri</cite>
+        <small>Then Prime Minister</small>
+      </div>
+      <div class="q">
+        <p>Former Prime Minister Fouad Siniora said he was &ldquo;the model of the jurist-scholar and the upright judge&rdquo;, a memoriser and interpreter of the Holy Quran and the Prophetic biography, and counted him a pillar of piety, knowledge and the call to moderation.</p>
+        <cite>Former Prime Minister Fouad Siniora</cite>
+        <small>From his statement of condolence</small>
+      </div>
+      <div class="q">
+        <p>At his funeral, the Mufti of Zahle and the Bekaa, Sheikh Khalil al-Mais, spoke of his virtues, his writings and his role in raising generations and spreading moderation and balance.</p>
+        <cite>Mufti of Zahle and the Bekaa, Sheikh Khalil al-Mais</cite>
+        <small>Funeral address, 2 January 2018</small>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:28px">He was also mourned by Lebanon&#39;s Dar al-Fatwa, the Higher Islamic Sharia Council, the Higher Council of the Sharia Judiciary, the Sunni Sharia courts, the Faculty of Islamic Sharia, the General Directorate of Islamic Endowments, the Council of Scholars in Lebanon, Dar al-Fatwa in Zahle and the Bekaa, Dar al-Fatwa in Rashaya, and the Maqasid Islamic Philanthropic Association in Beirut.</p>
+  </div>
+</section>
+
+<section id="wafat" class="passing">
+  <div class="wrap">
+    <h2 class="sec-title">Passing &amp; Funeral</h2>
+    <p class="lead">Sheikh Dr. Ahmad Elladan passed to God&#39;s mercy at midday on Monday, 1 January 2018, corresponding to 14 Rabi&#39; al-Thani 1439 AH, in Beirut, after a long illness, at about 64 years of age.</p>
+    <p class="lead">He was laid to rest the next day. The funeral prayer was held at the mosque of his hometown, Khirbet Rouha, led by the Mufti of the Republic, Sheikh Abdul Latif Derian, and he was buried there. At the funeral, Mufti Derian, Mufti al-Mais and the town&#39;s imam spoke of his virtues, his writings and his role in raising generations and spreading moderation and balance.</p>
+    <p class="lead" style="font-family:'Aref Ruqaa','Amiri',serif;font-size:1.7rem;color:var(--night-brass);line-height:1.9" lang="ar" dir="rtl">اللهم اغفر له وارحمه، وأكرم نزله، ووسّع مدخله.</p>
+    <p class="lead" style="margin-top:0;font-style:italic">O God, forgive him and have mercy on him, honour his arrival, and make his entrance spacious.</p>
+  </div>
+</section>
+
+<section id="masader" class="sources">
+  <div class="wrap">
+    <h2 class="sec-title">Official Page</h2>
+    <p class="lead">The Sheikh&#39;s official Facebook page holds rare photographs and stories from his life: <a href="https://www.facebook.com/aalladan/" rel="noopener">facebook.com/aalladan</a></p>
+    <ol>
+      <li><a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D9%84%D8%AF%D9%86" rel="noopener">Ahmad Elladan, Wikipedia (in Arabic)</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="rahima">May God have mercy on Sheikh Dr. Ahmad Elladan</span>
+  </div>
+</footer>
+
+</body>
+</html>
