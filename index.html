@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الشيخ الدكتور أحمد اللدن</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --stone:#eef0ec;
+  --paper:#f8f9f6;
+  --ink:#16302f;
+  --teal:#1f5b55;
+  --brass:#8f6f26;
+  --line:#cdd5d0;
+  --night:#0f2423;
+  --night-ink:#e9efe9;
+  --night-brass:#d2b25c;
+  --display:"Aref Ruqaa","Amiri",serif;
+  --head:"Reem Kufi","Amiri",sans-serif;
+  --body:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--body);font-size:1.22rem;line-height:2.05}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+.nav{position:sticky;top:0;z-index:5;background:var(--ink);border-bottom:2px solid var(--brass)}
+.nav ul{list-style:none;margin:0;padding:0 20px;display:flex;gap:4px;overflow-x:auto;max-width:1040px;margin-inline:auto;scrollbar-width:thin}
+.nav a{display:block;white-space:nowrap;padding:12px 14px;color:#dfe7e2;text-decoration:none;font-family:var(--head);font-size:1rem;line-height:1.6}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav a.khat{color:var(--night-brass)}
+.hero{padding:56px 0 48px;background:linear-gradient(180deg,var(--paper),var(--stone));border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:center}
+.portrait{width:230px;aspect-ratio:4/5;border:2px solid var(--brass);border-radius:120px 120px 8px 8px;background:var(--ink);color:var(--night-brass);display:grid;place-items:center;font-family:var(--display);font-size:9rem;line-height:1;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.eyebrow{font-family:var(--head);color:var(--brass);font-size:1.05rem;letter-spacing:0}
+h1{font-family:var(--display);font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.5;font-weight:700;color:var(--ink)}
+.titles{font-size:1.35rem;margin:6px 0 14px}
+.rahima{font-family:var(--display);color:var(--teal);font-size:1.6rem}
+.dates{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:14px;font-size:1.08rem}
+.dates span{border-inline-start:3px solid var(--brass);padding-inline-start:12px}
+section{padding:60px 0}
+.sec-title{font-family:var(--head);font-size:clamp(1.8rem,4vw,2.4rem);color:var(--ink);line-height:1.6;margin-bottom:6px}
+.sec-title::after{content:"";display:block;width:64px;height:3px;background:var(--brass);margin-top:8px}
+.lead{max-width:62ch;margin:18px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:var(--paper);border:1px solid var(--line);padding:22px 24px}
+.card h3{font-family:var(--head);font-size:1.25rem;color:var(--teal);margin-bottom:4px;line-height:1.7}
+.card p{margin:0}
+.card ul{margin:6px 0 0;padding-inline-start:1.2rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;border:1px solid var(--line);background:var(--paper)}
+.fact{padding:18px 20px;border-inline-start:1px solid var(--line)}
+.fact:first-child{border-inline-start:0}
+.fact b{display:block;font-family:var(--head);font-size:2rem;color:var(--brass);line-height:1.4;font-variant-numeric:tabular-nums}
+.fact span{font-size:1.02rem;line-height:1.7;display:block}
+.tl{list-style:none;margin:30px 0 0;padding:0;border-inline-start:2px solid var(--line)}
+.tl li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:10px 22px 10px 0;position:relative}
+.tl li::before{content:"";position:absolute;inset-inline-start:-7px;top:22px;width:12px;height:12px;background:var(--brass);border-radius:50%}
+.tl li{padding-inline-start:26px;padding-inline-end:0}
+.tl .y{font-family:var(--head);color:var(--brass);font-size:1.25rem;font-variant-numeric:tabular-nums;line-height:2}
+.tl .t{margin:0}
+.tl .t small{display:block;color:var(--teal);font-size:1rem}
+#khat{background:var(--night);color:var(--night-ink);padding:72px 0 80px}
+#khat .sec-title{color:var(--night-brass)}
+#khat .sec-title::after{background:var(--night-brass)}
+#khat a{color:var(--night-brass)}
+.basmala{font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem);text-align:center;color:var(--night-brass);margin:0 0 34px;line-height:1.8}
+.khat-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:28px}
+.dark{background:rgba(255,255,255,.045);border:1px solid rgba(210,178,92,.28);padding:22px 24px}
+.dark h3{font-family:var(--head);color:var(--night-brass);font-size:1.25rem;margin-bottom:6px;line-height:1.7}
+.dark p{margin:0}
+.dark ul{margin:6px 0 0;padding-inline-start:1.2rem}
+.dark li{margin-bottom:6px}
+.gallery{columns:3;column-gap:16px;margin-top:20px}
+.gallery figure{margin:0 0 16px!important;break-inside:avoid}
+.gallery a{display:block}
+.gallery img{border:1px solid rgba(210,178,92,.28);background:#fff}
+.gallery img{width:100%;height:auto;display:block}
+.gallery figcaption{font-size:.95rem;margin-top:6px;color:#c7d3cd;line-height:1.7}
+.h-sub{font-family:var(--head);font-size:1.4rem;margin:44px 0 0;color:var(--night-ink);line-height:1.7}
+.media-row{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:26px}
+.vid{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--teal);padding:16px 18px 18px}
+.vid h3{font-family:var(--head);font-size:1.15rem;color:var(--teal);margin:0 0 4px;line-height:1.7}
+.vid p{margin:0 0 10px;font-size:1.05rem;line-height:1.8}
+.vid .alt{display:block;margin-top:12px;padding:12px 16px;background:var(--ink);color:var(--night-brass);text-decoration:none;font-family:var(--head);font-size:1.05rem;text-align:center;line-height:1.7}
+.vid .alt::before{content:"\25B6  "}
+.vid .alt:hover{background:var(--teal);color:#fff}
+.links{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+.links li{border-bottom:1px solid var(--line);padding:10px 0;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;font-size:1.1rem;line-height:1.8}
+.links small{color:#4c625f;font-size:.95rem;white-space:nowrap}
+.sub{font-family:var(--head);font-size:1.35rem;color:var(--ink);margin:40px 0 0;line-height:1.7}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+.q{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--teal);padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.q p{margin:0}
+.q cite{font-style:normal;font-family:var(--head);font-size:1rem;color:var(--brass);line-height:1.7}
+.q small{display:block;color:#4c625f;font-size:.95rem;line-height:1.7}
+.passing{background:var(--ink);color:#e8eeea}
+.passing .sec-title{color:#fff}
+.passing .sec-title::after{background:var(--night-brass)}
+.passing a{color:var(--night-brass)}
+.sources ol{padding-inline-start:1.3rem;margin:18px 0 0}
+.sources li{margin-bottom:4px;font-size:1.05rem;line-height:1.9}
+footer{background:var(--night);color:#cfdad4;padding:30px 0 40px;text-align:center;font-size:1.05rem}
+footer .rahima{color:var(--night-brass);display:block;margin-bottom:6px}
+@media (max-width:820px){
+  .media-row{grid-template-columns:1fr}
+  .links li{grid-template-columns:1fr;gap:0}
+  .hero .wrap{grid-template-columns:1fr;justify-items:start;gap:26px}
+  .portrait{width:170px;font-size:6.5rem}
+  .two,.khat-grid,.quotes{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact:nth-child(3){border-inline-start:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+  .gallery{columns:2}
+  .tl li{grid-template-columns:1fr;gap:0}
+  section{padding:44px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="أقسام الموقع">
+  <ul>
+    <li><a href="#top">الرئيسية</a></li>
+    <li><a href="#nabtha">نبذة</a></li>
+    <li><a href="#masira">المسيرة</a></li>
+    <li><a href="#ilm">العلم والتدريس</a></li>
+    <li><a href="#qada">القضاء والإفتاء</a></li>
+    <li><a href="#dawa">الكتابة والإعلام</a></li>
+    <li><a class="khat" href="#khat">فن الخط العربي</a></li>
+    <li><a href="#media">مرئيات</a></li>
+    <li><a href="#shahadat">شهادات</a></li>
+    <li><a href="#wafat">الوفاة</a></li>
+    <li><a href="#masader">المصادر</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="portrait" aria-hidden="true">أ</div>
+    <div>
+      <div class="eyebrow">الموقع التذكاري</div>
+      <h1>الشيخ الدكتور أحمد اللدن</h1>
+      <p class="titles">مفتي راشيا &middot; عالم وفقيه &middot; قاضٍ شرعي &middot; داعية &middot; خطّاط</p>
+      <div class="rahima">رحمه الله تعالى</div>
+      <div class="dates">
+        <span>الميلاد: 25 شباط 1953م &middot; 11 جمادى الآخرة 1372هـ</span>
+        <span>الوفاة: 1 كانون الثاني 2018م &middot; 14 ربيع الآخر 1439هـ</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="nabtha">
+  <div class="wrap">
+    <h2 class="sec-title">نبذة عن الشيخ</h2>
+    <p class="lead">هو الشيخ الدكتور أحمد بن سعيد اللدن الراشاني، عالم وفقيه وداعية وقاضٍ شرعي وخطّاط لبناني. وُلد في خربة روحا من قضاء راشيا في البقاع الغربي، وتولّى إفتاء قضاء راشيا من عام 2011 حتى وفاته.</p>
+    <p class="lead">جمع في حياته بين علوم الشريعة والتفسير، والقضاء الشرعي، والتدريس الجامعي، والعمل الصحفي والإذاعي والتلفزيوني، وبين فن الخط العربي الذي رافقه منذ مقاعد الدراسة، فكتب بيده أجزاءً من المصحف الشريف ونال جوائز في مسابقات الخط الدولية.</p>
+
+    <div class="facts">
+      <div class="fact"><b>1953</b><span>سنة الميلاد في خربة روحا، راشيا</span></div>
+      <div class="fact"><b>1995</b><span>الدكتوراه من مصر بدرجة امتياز ومرتبة الشرف الأولى</span></div>
+      <div class="fact"><b>2011</b><span>تكليفه مفتياً لقضاء راشيا</span></div>
+      <div class="fact"><b>2008</b><span>تعيينه قاضياً شرعياً ورئيساً للمحكمة الشرعية في عرسال</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="masira" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">المسيرة عبر السنين</h2>
+    <ol class="tl">
+      <li><span class="y">1953</span><p class="t">ولادته في خربة روحا، قضاء راشيا، لبنان.</p></li>
+      <li><span class="y">1964</span><p class="t">أنهى المرحلة الابتدائية في مدرسة المقاصد الخيرية الإسلامية في قريته، وتتلمذ على الشيخ حمدي أبو جاق في القرآن وتجويده.</p></li>
+      <li><span class="y">1972</span><p class="t">أنهى الدراسة الثانوية في أزهر لبنان ببيروت، ثم سافر إلى مصر والتحق بمدرسة تحسين الخطوط.</p></li>
+      <li><span class="y">1976</span><p class="t">نال شهادة الليسانس، وعاد إلى لبنان وعمل في مجلة «الفكر الإسلامي» وفي أزهر بيروت.</p></li>
+      <li><span class="y">1978</span><p class="t">تزوّج واستقر في بيروت (زردان)، وعمل في تصحيح الكتب لدى كبرى دور النشر.</p></li>
+      <li><span class="y">1981 – 1983</span><p class="t">عمل في مجلة «اللواء» بدوام ليلي، ثم تفرّغ لكتابة المصحف الشريف.</p></li>
+      <li><span class="y">1984 – 1986</span><p class="t">إجازة دراسية إلى مصر، وعاد حاملاً شهادة الماجستير.</p></li>
+      <li><span class="y">1990</span><p class="t">ناظراً في أزهر البقاع، ثم إماماً في بلدة تعلبايا ومدرّساً في مدرسة الأخوة الوطنية.</p></li>
+      <li><span class="y">1995</span><p class="t">أتمّ رسالة الدكتوراه في مصر بدرجة امتياز مع مرتبة الشرف الأولى.</p></li>
+      <li><span class="y">1998</span><p class="t">شارك في مؤتمر بالأردن، وفاز بجائزة خط النسخ في المسابقة الدولية الرابعة لفن الخط العربي.</p></li>
+      <li><span class="y">2000</span><p class="t">ندوة في قناة الصفوة عن المرأة، ومؤتمر الشارقة، وزيارة إلى كندا التقى فيها الجاليات الإسلامية.</p></li>
+      <li><span class="y">2005</span><p class="t">شارك في المعرض الثاني للخط العربي والحروفية في طرابلس (الجامعة اللبنانية).</p></li>
+      <li><span class="y">2008</span><p class="t">عُيّن قاضياً شرعياً ورئيساً للمحكمة الشرعية في عرسال حتى 2012.</p></li>
+      <li><span class="y">2011</span><p class="t">كلّفه مفتي الجمهورية الشيخ محمد رشيد قباني مفتياً لقضاء راشيا (أيار 2011).</p></li>
+      <li><span class="y">2012 – 2018</span><p class="t">رئيساً لمحكمة راشيا الشرعية.</p></li>
+      <li><span class="y">2013</span><p class="t">حضر المؤتمر الدولي لمسلمي أمريكا اللاتينية في البرازيل، وبدأ برامجه على تلفزيون المستقبل (حتى 2017).</p></li>
+      <li><span class="y">2016</span><p class="t">شارك في مؤتمر «الإسلام والوسطية» في دار الفتوى.</p></li>
+      <li><span class="y">2018</span><p class="t">انتقل إلى رحمة الله في 1 كانون الثاني.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="ilm">
+  <div class="wrap">
+    <h2 class="sec-title">العلم والتدريس</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>مراحل الدراسة</h3>
+        <ul>
+          <li>الابتدائية: مدرسة المقاصد الخيرية الإسلامية في القرية.</li>
+          <li>الثانوية: أزهر لبنان في بيروت (1972).</li>
+          <li>جامعة الأزهر في مصر: الليسانس (1976)، الماجستير (1986)، الدكتوراه (1995) في كلية أصول الدين.</li>
+          <li>التقى في مصر بعدد من المشايخ والقرّاء، منهم الشيخ مصطفى إسماعيل والشيخ خليل الحصري.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>التدريس الجامعي</h3>
+        <p>درّس في كلية الشريعة، ومعهد المقاصد، وكلية الدعوة، وكلية الإمام الأوزاعي، وكلية الشريعة في البقاع، وأزهر البقاع، وجامعة بيروت الإسلامية وجامعة المقاصد.</p>
+      </div>
+      <div class="card">
+        <h3>الإشراف على الرسائل</h3>
+        <p>أشرف على عدد كبير من الرسائل الجامعية في جامعة طرابلس الإسلامية وجامعة الجنان في طرابلس، وناقش رسائل في الكليتين وفي سائر الجامعات الإسلامية التي درّس فيها.</p>
+      </div>
+      <div class="card">
+        <h3>البحث والمؤتمرات</h3>
+        <p>قدّم في مؤتمر الشارقة عام 2000 بحثاً عن التفسير الموضوعي، وشارك في مؤتمر في الأردن (1998)، ومؤتمر «الإسلام والوسطية» في دار الفتوى (2016)، والمؤتمر الدولي لمسلمي أمريكا اللاتينية في البرازيل (2013).</p>
+      </div>
+      <div class="card" style="grid-column:1/-1">
+        <h3>مشاركاته في الجزائر: الزاوية البلقائدية الهبرية</h3>
+        <p>شارك الشيخ في سلسلة «الدروس المحمدية» التي تنظمها الزاوية البلقائدية الهبرية في بلدة سيدي معروف شرق وهران في الجزائر. تُقام السلسلة سنوياً بمشاركة علماء من الجزائر والعالم الإسلامي، ومنهم علماء من لبنان. وقد ألقى فيها محاضرات عامًا بعد عام.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="qada" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">القضاء والإفتاء</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>القاضي الشرعي</h3>
+        <p>عُيّن قاضياً عام 2008، فرأس المحكمة الشرعية في عرسال من 2008 إلى 2012، ثم رأس محكمة راشيا الشرعية من 2012 إلى 2018.</p>
+      </div>
+      <div class="card">
+        <h3>مفتي راشيا</h3>
+        <p>أصدر مفتي الجمهورية اللبنانية الشيخ محمد رشيد قباني عام 2011 قراراً بتكليفه مفتياً لقضاء راشيا، فقام بالمهمة حتى وفاته. أسّس في بلدته جمعية «البرهان» التي شرعت في بناء مقر لدار الفتوى في القضاء.</p>
+      </div>
+      <div class="card">
+        <h3>الإمامة والخطابة</h3>
+        <p>إمام بلدة تعلبايا. وفي دار الفتوى كتب المقالات تحت إشراف المفتي الشيخ حسن خالد، وتولّى منبر الفكر والفتاوى.</p>
+      </div>
+      <div class="card">
+        <h3>نهجه</h3>
+        <p>عُرف بالدعوة إلى الوسطية والاعتدال، وبالتأكيد على أخذ التصوف الصحيح عن الشيوخ والعلماء المعتبرين.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dawa">
+  <div class="wrap">
+    <h2 class="sec-title">الكتابة والإعلام</h2>
+    <div class="two" style="margin-top:26px">
+      <div class="card">
+        <h3>التحرير والتصحيح</h3>
+        <p>عمل في مجلة «الفكر الإسلامي» حتى توقفها عام 1989، وفي مجلة «اللواء» (1981–1983). وصحّح كتباً لدى دار الكتب العلمية ودار المعرفة ودار إحياء التراث العربي ودار النفائس، منها «الكشاف» للزمخشري.</p>
+      </div>
+      <div class="card">
+        <h3>الإذاعة</h3>
+        <p>قدّم في إذاعة القرآن الكريم برنامج «أحكام الدين» أسبوعياً، وبرنامج «سير من النور» الذي عرض صوراً شعرية من حياة الصحابة على مدى ثلاث سنوات.</p>
+      </div>
+      <div class="card">
+        <h3>التلفزيون</h3>
+        <p>قدّم على تلفزيون المستقبل بين 2013 و2017 برامج دينية، منها «الأئمة الأربعة» و«خير الكلام». وشارك عام 2000 في ندوة بقناة الصفوة عن المرأة.</p>
+      </div>
+      <div class="card">
+        <h3>اللقاء بالجاليات</h3>
+        <p>سافر إلى كندا عام 2000 والتقى الجاليات الإسلامية في عدة مدن وولايات، وإلى البرازيل عام 2013 لحضور المؤتمر الدولي لمسلمي أمريكا اللاتينية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="khat">
+  <div class="wrap">
+    <p class="basmala" aria-hidden="true">بسم الله الرحمن الرحيم</p>
+    <h2 class="sec-title">فن الخط العربي</h2>
+    <p class="lead">كان الخط رفيق الشيخ أحمد اللدن منذ صباه. أُعجب به أساتذته مبكراً، فصقل موهبته في بيروت ثم في القاهرة، وبقي يكتب الخط إلى جانب عمله في العلم والقضاء. وفي تأبينه وصفه مفتي الجمهورية بأنه صاحب الفن والخط والزخرفة العربية.</p>
+
+    <div class="khat-grid">
+      <div class="dark">
+        <h3>من التلميذ إلى الخطّاط</h3>
+        <ul>
+          <li>في أزهر لبنان ببيروت التقى الحاج عفيف الطبارة الذي أبدى إعجابه بخطه، ووجّهه إلى الأستاذ كامل البابا، أحد كبار خطاطي لبنان.</li>
+          <li>أشار عليه الأستاذ كامل البابا بتعميق مهارته في مصر.</li>
+          <li>التحق في القاهرة بمدرسة تحسين الخطوط، وتتلمذ على الأستاذين سيد إبراهيم ومحمد عبد القادر.</li>
+          <li>أعجب كبار الخطاطين بخطه وشجّعوه على المضي في تطوير مهارته.</li>
+        </ul>
+      </div>
+      <div class="dark">
+        <h3>كتابة المصحف الشريف</h3>
+        <p>منذ عام 1983 عكف على كتابة المصحف الشريف بيده، على ورق كبير الحجم، وأنجز عدة أجزاء.</p>
+      </div>
+      <div class="dark">
+        <h3>المسابقات والمعارض</h3>
+        <ul>
+          <li><b>1998:</b> فاز بجائزة في خط النسخ في المسابقة الدولية الرابعة لفن الخط العربي.</li>
+          <li><b>11 – 12 حزيران 2005:</b> شارك في المعرض الثاني للخط العربي والحروفية في طرابلس، الجامعة اللبنانية.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="h-sub">معرض لوحاته</h3>
+    <p style="margin:4px 0 0;max-width:62ch">لوحات وأعمال بريشة الشيخ.</p>
+    <div class="gallery">
+      <figure><a href="1795318594437_art-01.jpg" target="_blank" rel="noopener"><img src="1795318594437_art-01.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594438_art-02.jpg" target="_blank" rel="noopener"><img src="1795318594438_art-02.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594439_art-03.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-03.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594439_art-04.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-04.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594439_art-05.jpg" target="_blank" rel="noopener"><img src="1795318594439_art-05.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594440_art-06.jpg" target="_blank" rel="noopener"><img src="1795318594440_art-06.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594440_art-07.jpg" target="_blank" rel="noopener"><img src="1795318594440_art-07.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594441_art-08.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-08.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594441_art-09.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-09.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594441_art-10.jpg" target="_blank" rel="noopener"><img src="1795318594441_art-10.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594442_art-11.jpg" target="_blank" rel="noopener"><img src="1795318594442_art-11.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594442_art-12.jpg" target="_blank" rel="noopener"><img src="1795318594442_art-12.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594443_art-13.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-13.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594443_art-14.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-14.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594444_art-16.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-16.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594444_art-17.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-17.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594444_art-18.jpg" target="_blank" rel="noopener"><img src="1795318594444_art-18.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594437_art-19.jpg" target="_blank" rel="noopener"><img src="1795318594437_art-19.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618021_art-20.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-20.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618021_art-21.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-21.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-22.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-22.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-23.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-23.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-24.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-24.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-25.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-25.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-26.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-26.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-27.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-27.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-28.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-28.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-29.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-29.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-30.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-30.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-31.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-31.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-32.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-32.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-33.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-33.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618022_art-34.jpg" target="_blank" rel="noopener"><img src="1795318618022_art-34.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618021_art-35.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-35.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318618021_art-36.jpg" target="_blank" rel="noopener"><img src="1795318618021_art-36.jpg" alt="لوحة خط عربي بريشة الشيخ أحمد اللدن" loading="lazy"></a></figure>
+      <figure><a href="1795318594443_art-15.jpg" target="_blank" rel="noopener"><img src="1795318594443_art-15.jpg" alt="صفحة عنوان رسالة دكتوراه بإشراف الشيخ أحمد اللدن، جامعة طرابلس" loading="lazy"></a><figcaption>صفحة عنوان رسالة دكتوراه أشرف عليها الشيخ، جامعة طرابلس</figcaption></figure>
+    </div>
+    <p style="margin-top:22px"><a href="https://www.facebook.com/aalladan/" rel="noopener">شاهد المزيد من أعماله على صفحته في فيسبوك</a></p>
+  </div>
+</section>
+
+<section id="media" style="background:var(--paper);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="sec-title">مرئيات وروابط</h2>
+    <p class="lead">مقاطع من صفحة الشيخ الرسمية، ودروسه وحلقاته المتاحة على يوتيوب.</p>
+
+    <h3 class="sub" style="margin-top:28px">برنامج «الأئمة الأربعة»: حلقات الشيخ</h3>
+    <p class="lead" style="margin-top:10px">حلقات من برنامج «الأئمة الأربعة» للإعلامي عبد الحليم قباني، كان الشيخ أحمد اللدن ضيفها، عن الإمام أحمد بن حنبل والإمام الأوزاعي وطبقات المجتهدين.</p>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=fH8wcO0MkQU" target="_blank" rel="noopener">الحلقة 21: الإمام أحمد بن حنبل، الجزء 1</a><small>21 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=QlRHpW1SvJY" target="_blank" rel="noopener">الحلقة 22: الإمام أحمد بن حنبل، الجزء 2</a><small>18 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=p5noSiD72Z8" target="_blank" rel="noopener">الحلقة 23: الإمام أحمد بن حنبل، الجزء 3</a><small>19 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=-qvecyvR3Gk" target="_blank" rel="noopener">الحلقة 24: الإمام أحمد بن حنبل، الجزء 4</a><small>19 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=2XKG-y6P2jc" target="_blank" rel="noopener">الحلقة 25: الإمام أحمد بن حنبل، الجزء 5</a><small>17 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=rX4Hogb9fnA" target="_blank" rel="noopener">الحلقة 26: الإمام أحمد بن حنبل، الجزء 6</a><small>18 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=_RBSFTFl_RU" target="_blank" rel="noopener">الحلقة 27: الإمام أحمد بن حنبل، الجزء 7</a><small>20 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=AqvYAfr1DQo" target="_blank" rel="noopener">الحلقة 28: الإمام عبد الرحمن بن عمرو الأوزاعي، الجزء 1</a><small>18 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=Mnu7JinEJ60" target="_blank" rel="noopener">الحلقة 29: الإمام عبد الرحمن بن عمرو الأوزاعي، الجزء 2</a><small>20 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=hvw--CBe1iY" target="_blank" rel="noopener">الحلقة 30 والأخيرة: مكانة الاجتهاد وطبقات المجتهدين</a><small>21 دقيقة</small></li>
+    </ul>
+
+    <div class="media-row">
+      <div class="vid">
+        <h3>صور نادرة وحكايا من سيرة الشيخ</h3>
+        <p>مقطع من صفحة الشيخ الرسمية على فيسبوك.</p>
+        <a class="alt" href="https://www.facebook.com/reel/2008461799178961" target="_blank" rel="noopener">افتح المقطع على فيسبوك</a>
+      </div>
+      <div class="vid">
+        <h3>أبيات مهداة إلى روح الشيخ</h3>
+        <p>كلمات الدكتور رأفت الميقاتي، إنشاد الأستاذ وليد أبو حيط.</p>
+        <a class="alt" href="https://www.youtube.com/watch?v=3rqOht7QFGY" target="_blank" rel="noopener">افتح على يوتيوب</a>
+      </div>
+      <div class="vid">
+        <h3>مسيرة المفتي الفكرية ومواهبه</h3>
+        <p>تقرير تلفزيون المستقبل عن سيرته.</p>
+        <a class="alt" href="https://www.youtube.com/watch?v=JFKLcUNtHCo" target="_blank" rel="noopener">افتح على يوتيوب</a>
+      </div>
+    </div>
+
+    <h3 class="sub">حلقات تلفزيونية وإذاعية وتغطيات</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=UEtUvE_1zPo&t=8s" target="_blank" rel="noopener">من أجمل ذكرياتي مع أستاذي الراحل الشيخ د. أحمد اللدن رحمه الله تعالى</a><small>23 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=zHnnbDmxKEc" target="_blank" rel="noopener">أسباب النزول: قصة بقرة بني إسرائيل 1، ضيف الحلقة الشيخ أحمد اللدن، تقديم الإعلامي عبد الحليم قباني</a><small>21 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=li8gMwU7ruA" target="_blank" rel="noopener">أسباب النزول: قصة بقرة بني إسرائيل 2</a><small>23 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=JFKLcUNtHCo" target="_blank" rel="noopener">مسيرة المفتي الشيخ أحمد اللدن الفكرية ومواهبه، تلفزيون المستقبل</a><small>3 دقائق</small></li>
+      <li><a href="https://www.youtube.com/watch?v=z9sC_HfvEb0" target="_blank" rel="noopener">هكذا شيّع لبنان مفتي راشيا، تلفزيون المستقبل</a><small>دقيقتان</small></li>
+      <li><a href="https://www.youtube.com/watch?v=FzrcpmhCpCE" target="_blank" rel="noopener">صور وحكايا من حياة مفتي راشيا الراحل</a><small>9 دقائق</small></li>
+    </ul>
+    <h3 class="sub">مشاركاته في الجزائر: الزاوية البلقائدية الهبرية</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=s3oAPwKK3iU" target="_blank" rel="noopener">2008 (رمضان 1429، الملتقى الثالث، محور «من وحي السنة الشريفة»): العبودية في السنة النبوية</a><small>ساعة و20 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=UOcjtPMD1yI" target="_blank" rel="noopener">2009 (رمضان 1430، الملتقى الرابع، محور «الخلفاء الراشدون»): سيدنا عثمان بن عفان، مدرسة الحياء</a><small>ساعة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=iGdxs0SNmNY" target="_blank" rel="noopener">2009: مكانة العقل في الإسلام</a><small>44 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=u8aFE8_cmLk" target="_blank" rel="noopener">2009: عقيدة أهل السنة والجماعة</a><small>32 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=AX6N-QU-Xlo" target="_blank" rel="noopener">2010 (رمضان 1431، الملتقى الخامس، محور «العِلم»): الدروس المحمدية 2010، الجزء الرابع</a><small>14 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=0WQjGTW_gbQ" target="_blank" rel="noopener">2011 (رمضان 1432، الملتقى السادس): فضل السادة الأشاعرة في المحافظة والدفاع عن العقيدة الإسلامية</a><small>31 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/@zaouiabelkaidia" target="_blank" rel="noopener">الملتقى السابع: حقوق وواجبات المرأة في الإسلام من خلال حياة أمهات المؤمنين (ندوة)</a><small>القناة</small></li>
+      <li><a href="https://www.youtube.com/@zaouiabelkaidia" target="_blank" rel="noopener">2016 (رمضان 1437، الملتقى الحادي عشر، محور «صلاح الأمة في اتباع رسول الرحمة»): اتباع سيد البشر في الأمر بالمعروف والنهي عن المنكر، والعصرنة وأثرها على الإسلام</a><small>القناة</small></li>
+    </ul>
+
+    <h3 class="sub">دروس ومحاضرات وخطب</h3>
+    <ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=0WQjGTW_gbQ" target="_blank" rel="noopener">فضل السادة الأشاعرة في المحافظة والدفاع عن العقيدة الإسلامية</a><small>31 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=iGdxs0SNmNY" target="_blank" rel="noopener">مكانة العقل في الإسلام (2009)</a><small>44 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=u8aFE8_cmLk" target="_blank" rel="noopener">عقيدة أهل السنة والجماعة (2009)</a><small>32 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=s3oAPwKK3iU" target="_blank" rel="noopener">العبودية في السنة النبوية (الدروس المحمدية 2008)</a><small>ساعة و20 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=UOcjtPMD1yI" target="_blank" rel="noopener">سيدنا عثمان بن عفان رضي الله عنه، مدرسة الحياء</a><small>ساعة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=7iPLzT4bV9o" target="_blank" rel="noopener">خطبة الجمعة: «وقفوهم إنهم مسؤولون» (20 كانون الأول 2014)</a><small>25 دقيقة</small></li>
+      <li><a href="https://www.youtube.com/watch?v=3INs-SyMPxA" target="_blank" rel="noopener">تفسير قوله تعالى: «إني متوفيك ورافعك إليّ»</a><small>مقطع</small></li>
+      <li><a href="https://www.youtube.com/watch?v=HigAMh5GtTo" target="_blank" rel="noopener">عقيدة المسلمين</a><small>مقطع قصير</small></li>
+      <li><a href="https://www.youtube.com/watch?v=pnPRFaY4MbA" target="_blank" rel="noopener">كلمة في مؤتمر هيئة علماء المسلمين لنصرة الثورة السورية</a><small>17 دقيقة</small></li>
+    </ul>
+  </div>
+</section>
+
+<section id="shahadat">
+  <div class="wrap">
+    <h2 class="sec-title">شهادات في حقه</h2>
+    <div class="quotes">
+      <div class="q">
+        <p>وصفه مفتي الجمهورية الشيخ عبد اللطيف دريان بأنه «مثال العالم الفقيه» وصاحب الأدب الرفيع والفن والخط والزخرفة العربية.</p>
+        <cite>مفتي لبنان، الشيخ عبد اللطيف دريان</cite>
+        <small>من نعيه، 2018</small>
+      </div>
+      <div class="q">
+        <p>رأى فيه الرئيس سعد الحريري «نبراساً للحكمة والاعتدال»، وداعيةً للوحدة والمحبة وتحمّل المسؤولية. وعزّى دار الفتوى التي كان ركناً من أركانها.</p>
+        <cite>الرئيس سعد الحريري</cite>
+        <small>رئيس مجلس الوزراء حينها</small>
+      </div>
+      <div class="q">
+        <p>قال الرئيس فؤاد السنيورة إنه كان «مثال العالم الفقيه والقاضي النزيه»، حافظاً ومفسراً للقرآن الكريم والسيرة النبوية، وعدّه ركناً أساسياً من أركان التقوى والعلم والدعوة إلى الوسطية.</p>
+        <cite>الرئيس فؤاد السنيورة</cite>
+        <small>من بيان نعيه</small>
+      </div>
+      <div class="q">
+        <p>تحدّث مفتي زحلة والبقاع الشيخ خليل الميس في مأتمه عن فضائله ومؤلفاته ودوره في تربية الأجيال ونشر الوسطية والاعتدال.</p>
+        <cite>مفتي زحلة والبقاع، الشيخ خليل الميس</cite>
+        <small>كلمة في التشييع، 2 كانون الثاني 2018</small>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:28px">كما نعته دار الفتوى اللبنانية والمجلس الشرعي الإسلامي الأعلى ومجلس القضاء الشرعي الأعلى والمحاكم الشرعية السنيّة وكلية الشريعة الإسلامية والمديرية العامة للأوقاف الإسلامية ومجلس العلماء في لبنان ودار الفتوى في زحلة والبقاع ودار الفتوى في راشيا وجمعية المقاصد الخيرية الإسلامية في بيروت.</p>
+  </div>
+</section>
+
+<section id="wafat" class="passing">
+  <div class="wrap">
+    <h2 class="sec-title">الوفاة والتشييع</h2>
+    <p class="lead">انتقل الشيخ الدكتور أحمد اللدن إلى رحمة الله ظهر يوم الإثنين 1 كانون الثاني 2018م، الموافق 14 ربيع الآخر 1439هـ، في بيروت، بعد مرض طويل وعن نحو 64 عاماً.</p>
+    <p class="lead">شُيّع في اليوم التالي، وصُلّي عليه في مسجد بلدته خربة روحا بإمامة مفتي الجمهورية الشيخ عبد اللطيف دريان، ووُري الثرى فيها. وتحدث في التشييع المفتي دريان والمفتي الميس وإمام البلدة، عن فضائله ومؤلفاته ودوره في تربية الأجيال ونشر الوسطية والاعتدال.</p>
+    <p class="lead" style="font-family:var(--display);font-size:1.7rem;color:var(--night-brass)">اللهم اغفر له وارحمه، وأكرم نزله، ووسّع مدخله.</p>
+  </div>
+</section>
+
+<section id="masader" class="sources">
+  <div class="wrap">
+    <h2 class="sec-title">الصفحة الرسمية والمصادر</h2>
+    <p class="lead">الصفحة الرسمية للشيخ على فيسبوك تضم صوراً نادرة وحكايا من سيرته: <a href="https://www.facebook.com/aalladan/" rel="noopener">facebook.com/aalladan</a></p>
+    <ol>
+      <li><a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D9%84%D8%AF%D9%86" rel="noopener">أحمد اللدن، ويكيبيديا</a></li>
+      <li><a href="https://www.mtv.com.lb/news/772270" rel="noopener">مفتي راشيا إلى مثواه الأخير في خربة روحا، MTV Lebanon (2 كانون الثاني 2018)</a></li>
+      <li><a href="https://www.lebanon24.com/news/lebanon/418735/%D8%A7%D9%84%D8%B3%D9%86%D9%8A%D9%88%D8%B1%D8%A9-%D9%86%D8%B9%D9%89-%D9%85%D9%81%D8%AA%D9%8A-%D8%B1%D8%A7%D8%B4%D9%8A%D8%A7-%D9%83%D8%A7%D9%86-%D9%85%D8%AB%D8%A7%D9%84-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D9%81%D9%82%D9%8A%D9%87-%D9%88%D8%A7%D9%84%D9%82%D8%A7%D8%B6%D9%8A-%D8%A7%D9%84%D9%86%D8%B2%D9%8A%D9%87" rel="noopener">السنيورة نعى مفتي راشيا، لبنان 24</a></li>
+      <li><a href="https://www.alanba.com.kw/ar/arabic-international-news/lebanon-news/802126/03-01-2018-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-%D9%8A%D9%86%D8%B9%D9%89-%D9%85%D9%81%D8%AA%D9%8A-%D8%B1%D8%A7%D8%B4%D9%8A%D8%A7-%D8%AF%D8%A7%D9%84%D9%84%D8%AF%D9%86-%D9%88%D8%A7%D9%84%D8%AD%D8%B1%D9%8A%D8%B1%D9%8A-%D9%81%D9%82%D8%AF%D9%86%D8%A7-%D9%86%D8%A8%D8%B1%D8%A7%D8%B3%D8%A7-%D9%84%D9%84%D8%AD%D9%83%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D9%84" rel="noopener">لبنان الرسمي ينعى مفتي راشيا، الأنباء الكويتية</a></li>
+      <li><a href="https://almadarnet.com/%D8%A8%D9%84%D8%AF%D8%A7%D8%AA-%D9%88%D8%A8%D9%84%D8%AF%D9%8A%D8%A7%D8%AA-%D8%A8%D9%82%D8%A7%D8%B9%D9%8A%D8%A9-%D9%80-%D8%AE%D8%B1%D8%A8%D8%A9-%D8%B1%D9%88%D8%AD%D8%A7-%D9%80-%D9%82%D8%B6%D8%A7%D8%A1/" rel="noopener">بلدات وبلديات بقاعية: خربة روحا، المدارنت</a></li>
+      <li>سيرة الشيخ كما دوّنتها العائلة.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="rahima">رحم الله الشيخ الدكتور أحمد اللدن</span>
+  </div>
+</footer>
+
+</body>
+</html>
